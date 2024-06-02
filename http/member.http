@@ -1,0 +1,25 @@
+
+
+
+
+###  멤버생성
+POST localhost:8080/members
+Content-Type: application/json
+
+{
+  "id": "1",
+  "name": "이기훈",
+  "password": "1",
+  "age": 15,
+  "role": "member"
+}
+
+
+###  멤버정보가져오기
+GET localhost:8080/members/4
+#Accept: application/xml
+
+
+
+### pageable
+GET localhost:8080/pageable?page=0&size=14
